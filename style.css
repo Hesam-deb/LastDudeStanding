@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: gray;
+    cursor: pointer;
+    user-select: none;
+}
+
+#game {
+    width: 500px;
+    height: 262px;
+    border: 3px solid white;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#Last img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 150px;
+    left: 20px;
+}
+
+#Eager img {
+    width: 25px;
+    height: 35px;
+    position: relative;
+    top: 120px;
+    left: 480px;
+    animation: Eager 1.3s infinite linear;
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+
+@keyframes Eager {
+    0% {left: 480px;}
+    100% {left: -40px;}
+}
+
+@keyframes jump {
+    0% {top: 150px;}
+    30% {top: 100px;}
+    70% {top: 100px;}
+    100% {top: 150px;}
+}
+
+.score {
+    color: #fff;
+    padding: 15px;
+}
